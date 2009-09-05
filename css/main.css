@@ -1,0 +1,19 @@
+header, #Header {
+  border-bottom: 1px solid #333;
+  margin-bottom: 18px;
+}
+footer, #Footer {
+  border-top: 1px solid #333;
+  margin-top: 18px;
+  text-align: center;
+}
+
+abbr {
+/*  border-bottom: 1px dashed #000;*/
+  text-decoration: underline;
+  cursor: help;
+}
+
+#logo {
+  
+}
