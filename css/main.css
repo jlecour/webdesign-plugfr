@@ -1,9 +1,14 @@
 body {
-  text-align: center;
+  background-color: #efefef;
 }
+
+
 #Wrapper {
   margin: 0 auto;
   text-align: left;
+  border: 1px solid #ccc;
+  border-size: 0 1px;
+  background-color: #fff;
 }
 
 header, #Header {
@@ -16,6 +21,23 @@ footer, #Footer {
   margin-top: 18px;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.article {
+  border-bottom: 1px solid #ccc;
+}
+
+code {
+/*  font-size: 12px;*/
+	font-family: "DejaVu sans Mono", monaco, consolas, monospace;
+}
+ 
+pre {
+/*  font-size: 12px;*/
+	font-family: "DejaVu sans Mono", monaco, consolas, monospace;
+	background: #eee;
+/*  padding: 1em;*/
+	overflow: auto;
 }
 
 abbr {

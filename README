@@ -1,8 +1,11 @@
 Templates pour le nouveau site du PLUG
 
 
-La structure extérieur de la page d'accueil est en place
+Il y a un début de style visuel, mais il faut encore beaucoup retravailler :
+* les tailles de polices
+* les couleurs de liens survolés
+* les marges de titres, paragraphes, …
 
-Le contenu de la colonne de gauche est placé, mais les mots, catégories exactes, … ne sont pas figés
+Il faut aussi placer des bouts de code et pre, ainsi que des images pour tester la mise en forme/page
 
-Aucun style visuel (tailel de texte, typo, couleur, marges, …) n'a été travaillé, ne pas s'y fier.
+Enfin, il faut vérifier les CLASS et ID des balises pour homogénéiser.
