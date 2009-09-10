@@ -27,16 +27,20 @@ footer, #Footer {
   border-bottom: 1px solid #ccc;
 }
 
+.bottom-nav {
+  margin: 5px 0;
+}
+
 code {
-/*  font-size: 12px;*/
+  font-size: 12px;
 	font-family: "DejaVu sans Mono", monaco, consolas, monospace;
 }
  
 pre {
-/*  font-size: 12px;*/
+  font-size: 12px;
 	font-family: "DejaVu sans Mono", monaco, consolas, monospace;
-	background: #eee;
-/*  padding: 1em;*/
+	background: #efefef;
+  padding: 1em;
 	overflow: auto;
 }
 

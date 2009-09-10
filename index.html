@@ -44,10 +44,31 @@
           <li>logiciels de Contrôle de Version (intro générale)</li>
         </ul>
 
+        <pre><code class="ruby">
+  def deep_link(options = {})
+    
+    base = AppConfig.brokers.ratestogo.deep_link_url
+    
+    url_options_1 = {
+      :id => AppConfig.brokers.ratestogo.login,
+      :ru => "SearchResults.asp",
+    }
+    
+    if options[:date].present? &amp;&amp; (start_date = enforce_futur_date(options[:date]))
+      url_options_2[:inDate]  = start_date.to_s
+    end
+    
+    base + "?" + url_options_1.to_param + "?" + (url_options_2.to_param).gsub(/&amp;/,'%26')
+  end
+        </code></pre>
+
         Les thématiques pas encore introduites :
         <ul>
           <li>Les logiciels de gestion de contenus : CMS</li>
         </ul>
+        
+        <pre>sudo gem install jekyll</pre>
+        
         <p>Selon les envies de ceux qui pensent venir, nous pouvons adapter le programme. Signalez vos envies sur le <a href="">canal IRC</a> et/ou sur la <a href="">mailing-list</a>.</p>
         <p>Nous espérons retrouver comme la dernière fois les participants du forum Ubuntu qui sont venus "en masse" et nous ont fait le plaisir d’apporter des visages nouveaux (dont 3 filles&nbsp;!) et pleins de choses à boire/manger.</p>
         <p>Selon la tradition de l’auberge espagnole, les participants à la réunion sont invités à apporter un petit quelque chose à boire et/ou à grignoter.</p>
@@ -71,7 +92,7 @@
       <div class="article">
         <h2><a href="/posts/date-slug">Compte rendu de l'Assemblée Générale du 20 juin 2009</a></h2>
       </div>
-      <p>&larr; voir les <a href="/archives/">articles plus anciens</a></p>
+      <div class="bottom-nav">&larr; voir les <a href="/archives/">articles plus anciens</a></div>
     </div>
     <hr class="hide" />
     <div id="SideBar" class="grid_3 pull_9">
