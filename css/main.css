@@ -6,25 +6,35 @@ body {
 #Wrapper {
   margin: 0 auto;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid #efefef;
   border-size: 0 1px;
   background-color: #fff;
 }
 
 header, #Header {
-  border-bottom: 1px solid #333;
-  margin-bottom: 18px;
+  border-bottom: 3px solid #efefef;
+  margin-bottom: 20px;
   padding-top: 10px;
 }
 footer, #Footer {
-  border-top: 1px solid #333;
-  margin-top: 18px;
-  padding-bottom: 10px;
+  border-top: 3px solid #ccc;
+  margin-top: 10px;
+  padding: 10px 0;
   text-align: center;
+  font-size: 12px;
+}
+
+#about {
+  padding-top: 5px;
 }
 
 .article {
   border-bottom: 1px solid #ccc;
+}
+.article-chapo,
+.article-content,
+.article-ps {
+  clear: both;
 }
 
 .bottom-nav {
@@ -48,6 +58,15 @@ abbr {
 /*  border-bottom: 1px dashed #000;*/
   text-decoration: underline;
   cursor: help;
+}
+
+.img-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.img-right {
+  float: right;
+  margin: 0 1em 0 1em;
 }
 
 #logo {

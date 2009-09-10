@@ -18,7 +18,7 @@ a, a:visited {
 }
 a:hover {
   text-decoration: underline;
-  color: #333;
+  color: #008040;
 }
 
 /*body{font:13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif}*/
@@ -48,7 +48,8 @@ blockquote {
 /*  color: #efefef;*/
 }
 .article {
-  padding: 10px 0;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 .article h2 {
   margin: 0;
@@ -64,13 +65,15 @@ blockquote {
 
 
 .nav-block {
-/*  padding: 0 10px;*/
+  padding: 10px 10px;
 	font-family: helvetica, "helvetica neue", arial, verdana, sans-serif;
 	font-size: 13px;
+  border-bottom: 1px solid #efefef;
+/*  padding-bottom: 5px;*/
 }
 .nav-block h3 {
 /*  margin: 15px -10px 5px -10px;*/
-  margin: 15px 0 5px 0;
+  margin: 0 0 5px 0;
 /*  text-transform: uppercase;*/
 /*  font-weight: normal;*/
   font-size: 18px;
@@ -86,4 +89,18 @@ blockquote {
 .nav-block li {
   margin: 0;
   padding: 0;
+}
+
+#archives li {
+  padding: 0.25em 0;
+}
+.archive-a {
+  font-size: 1.5em;
+/*  display: block;*/
+/*  padding-bottom: -10px;*/
+  line-height: 0.85em;
+}
+.archive-m {
+  font-size: 0.85em;
+  line-height: 0.85em;
 }

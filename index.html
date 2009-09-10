@@ -33,46 +33,58 @@
     <div id="MainContent" class="grid_9 push_3">
       <div class="article">
         <h2><a href="/posts/date-slug">Réunion le 2 octobre</a></h2>
-        <p class="article-meta">publié le 5 septembre 2009 dans <a href="" class="category">réunions</a></p>
-        <p class="article-chapo">Le PLUG organise une réunion le vendredi 3 juillet 2009 à partir de 19h00.</p>
-        <p>Vers 20h00, nous commencerons par quelques "<b>présentation flash</b>", liées aux logiciels libres sous forme de mini-exposés successifs d’environ 5 minutes (ouvert à toute personne intéressée).<br>
-          N’hésitez pas à préparer quelque chose de très court, même si vous n’avez pas l’impression de maîtriser le sujet, le but et d’échanger sur quelque chose de nouveau (au moins pour vous).</p>
-        <p>La suite du programme n’est pas encore définie.</p>
-        Les grandes thématiques ouvertes sont :
-        <ul>
-          <li>Gestionnaires de paquets (intro générale et APT)</li>
-          <li>logiciels de Contrôle de Version (intro générale)</li>
-        </ul>
+        <div class="article-meta">
+          <p>publié le 5 septembre 2009 dans <a href="" class="category">réunions</a></p>
+        </div>
+        <div class="article-chapo">
+          <p>Le PLUG organise une réunion le vendredi 3 juillet 2009 à partir de 19h00.</p>
+        </div>
+        <div class="article-content">
+          <div class="img-right"><a href="img/photo.png" onclick="return false;"><img src="img/photo.png" alt="photo" width="150" height="150" /></a></div>
+          <p>Vers 20h00, nous commencerons par quelques "<b>présentation flash</b>", liées aux logiciels libres sous forme de mini-exposés successifs d’environ 5 minutes (ouvert à toute personne intéressée).<br>
+            N’hésitez pas à préparer quelque chose de très court, même si vous n’avez pas l’impression de maîtriser le sujet, le but et d’échanger sur quelque chose de nouveau (au moins pour vous).</p>
+        
+          <p>La suite du programme n’est pas encore définie.</p>
+          Les grandes thématiques ouvertes sont :
+          <ul>
+            <li>Gestionnaires de paquets (intro générale et APT)</li>
+            <li>logiciels de Contrôle de Version (intro générale)</li>
+          </ul>
 
-        <pre><code class="ruby">
-  def deep_link(options = {})
+          <pre><code class="ruby">
+    def deep_link(options = {})
     
-    base = AppConfig.brokers.ratestogo.deep_link_url
+      base = AppConfig.brokers.ratestogo.deep_link_url
     
-    url_options_1 = {
-      :id => AppConfig.brokers.ratestogo.login,
-      :ru => "SearchResults.asp",
-    }
+      url_options_1 = {
+        :id => AppConfig.brokers.ratestogo.login,
+        :ru => "SearchResults.asp",
+      }
     
-    if options[:date].present? &amp;&amp; (start_date = enforce_futur_date(options[:date]))
-      url_options_2[:inDate]  = start_date.to_s
+      if options[:date].present? &amp;&amp; (start_date = enforce_futur_date(options[:date]))
+        url_options_2[:inDate]  = start_date.to_s
+      end
+    
+      base + "?" + url_options_1.to_param + "?" + (url_options_2.to_param).gsub(/&amp;/,'%26')
     end
-    
-    base + "?" + url_options_1.to_param + "?" + (url_options_2.to_param).gsub(/&amp;/,'%26')
-  end
-        </code></pre>
+          </code></pre>
 
-        Les thématiques pas encore introduites :
-        <ul>
-          <li>Les logiciels de gestion de contenus : CMS</li>
-        </ul>
+          Les thématiques pas encore introduites :
+          <ul>
+            <li>Les logiciels de gestion de contenus : CMS</li>
+          </ul>
         
-        <pre>sudo gem install jekyll</pre>
+          <pre>sudo gem install jekyll</pre>
         
-        <p>Selon les envies de ceux qui pensent venir, nous pouvons adapter le programme. Signalez vos envies sur le <a href="">canal IRC</a> et/ou sur la <a href="">mailing-list</a>.</p>
-        <p>Nous espérons retrouver comme la dernière fois les participants du forum Ubuntu qui sont venus "en masse" et nous ont fait le plaisir d’apporter des visages nouveaux (dont 3 filles&nbsp;!) et pleins de choses à boire/manger.</p>
-        <p>Selon la tradition de l’auberge espagnole, les participants à la réunion sont invités à apporter un petit quelque chose à boire et/ou à grignoter.</p>
-        <div class="ps">
+          <p>Selon les envies de ceux qui pensent venir, nous pouvons adapter le programme. Signalez vos envies sur le <a href="">canal IRC</a> et/ou sur la <a href="">mailing-list</a>.</p>
+        
+          <div class="img-left"><a href="img/photo.png" onclick="return false;"><img src="img/photo.png" alt="photo" width="150" height="150" /></a></div>
+        
+          <p>Nous espérons retrouver comme la dernière fois les participants du forum Ubuntu qui sont venus "en masse" et nous ont fait le plaisir d’apporter des visages nouveaux (dont 3 filles&nbsp;!) et pleins de choses à boire/manger.</p>
+          <p>Selon la tradition de l’auberge espagnole, les participants à la réunion sont invités à apporter un petit quelque chose à boire et/ou à grignoter.</p>
+        </div>
+        
+        <div class="article-ps">
           La réunion se tiendra à La Bo[a]te.
           <blockquote>
             <strong><a href="http://laboate.com/" class="external">La Bo[a]te</a></strong><br>
@@ -133,11 +145,73 @@
       <div id="archives" class="nav-block">
         <h3>archives</h3>
         <ul>
-          <li><a href="" title="les articles publiés en 2009">2009</a></li>
-          <li><a href="" title="les articles publiés en 2008">2008</a></li>
-          <li><a href="" title="les articles publiés en 2007">2007</a></li>
-          <li><a href="" title="les articles publiés en 2006">2006</a></li>
-          <li><a href="" title="les articles publiés en 2005">2005</a></li>
+          <li>
+            <a href="" class="archive-a" title="les articles publiés en 2009">2009</a><br />
+            <a href="" class="archive-m" title="les articles publiés en janvier 2009">01</a>
+            <a href="" class="archive-m" title="les articles publiés en février 2009">02</a>
+            <a href="" class="archive-m" title="les articles publiés en mars 2009">03</a>
+            <a href="" class="archive-m" title="les articles publiés en avril 2009">04</a>
+            <a href="" class="archive-m" title="les articles publiés en mai 2009">05</a>
+            <a href="" class="archive-m" title="les articles publiés en juin 2009">06</a>
+            <a href="" class="archive-m" title="les articles publiés en juillet 2009">07</a>
+            <a href="" class="archive-m" title="les articles publiés en août 2009">08</a>
+            <a href="" class="archive-m" title="les articles publiés en septembre 2009">09</a>
+            <a href="" class="archive-m" title="les articles publiés en octobre 2009">10</a>
+            <a href="" class="archive-m" title="les articles publiés en novembre 2009">11</a>
+            <a href="" class="archive-m" title="les articles publiés en décembre 2009">12</a>
+          </li>
+          <li>
+            <a href="" class="archive-a" title="les articles publiés en 2008">2008</a><br />
+            <a href="" class="archive-m" title="les articles publiés en janvier 2008">01</a>
+            <a href="" class="archive-m" title="les articles publiés en février 2008">02</a>
+            <a href="" class="archive-m" title="les articles publiés en mars 2008">03</a>
+            <a href="" class="archive-m" title="les articles publiés en avril 2008">04</a>
+            <a href="" class="archive-m" title="les articles publiés en mai 2008">05</a>
+            <a href="" class="archive-m" title="les articles publiés en juin 2008">06</a>
+            <a href="" class="archive-m" title="les articles publiés en juillet 2008">07</a>
+            <a href="" class="archive-m" title="les articles publiés en août 2008">08</a>
+            <a href="" class="archive-m" title="les articles publiés en septembre 2008">09</a>
+            <a href="" class="archive-m" title="les articles publiés en octobre 2008">10</a>
+            <a href="" class="archive-m" title="les articles publiés en novembre 2008">11</a>
+            <a href="" class="archive-m" title="les articles publiés en décembre 2008">12</a>
+          </li>
+          <li>
+            <a href="" class="archive-a" title="les articles publiés en 2007">2007</a><br />
+            <a href="" class="archive-m" title="les articles publiés en janvier 2007">01</a>
+            <a href="" class="archive-m" title="les articles publiés en février 2007">02</a>
+            <a href="" class="archive-m" title="les articles publiés en mars 2007">03</a>
+            <a href="" class="archive-m" title="les articles publiés en avril 2007">04</a>
+            <a href="" class="archive-m" title="les articles publiés en mai 2007">05</a>
+            <a href="" class="archive-m" title="les articles publiés en juin 2007">06</a>
+            <a href="" class="archive-m" title="les articles publiés en juillet 2007">07</a>
+            <a href="" class="archive-m" title="les articles publiés en septembre 2007">09</a>
+            <a href="" class="archive-m" title="les articles publiés en octobre 2007">10</a>
+            <a href="" class="archive-m" title="les articles publiés en novembre 2007">11</a>
+            <a href="" class="archive-m" title="les articles publiés en décembre 2007">12</a>
+          </li>
+          <li>
+            <a href="" class="archive-a" title="les articles publiés en 2006">2006</a><br />
+            <a href="" class="archive-m" title="les articles publiés en janvier 2006">01</a>
+            <a href="" class="archive-m" title="les articles publiés en mars 2006">03</a>
+            <a href="" class="archive-m" title="les articles publiés en avril 2006">04</a>
+            <a href="" class="archive-m" title="les articles publiés en mai 2006">05</a>
+            <a href="" class="archive-m" title="les articles publiés en juin 2006">06</a>
+            <a href="" class="archive-m" title="les articles publiés en août 2006">08</a>
+            <a href="" class="archive-m" title="les articles publiés en septembre 2006">09</a>
+            <a href="" class="archive-m" title="les articles publiés en octobre 2006">10</a>
+            <a href="" class="archive-m" title="les articles publiés en novembre 2006">11</a>
+          </li>
+          <li>
+            <a href="" class="archive-a" title="les articles publiés en 2005">2005</a><br />
+            <a href="" class="archive-m" title="les articles publiés en janvier 2005">01</a>
+            <a href="" class="archive-m" title="les articles publiés en février 2005">02</a>
+            <a href="" class="archive-m" title="les articles publiés en mars 2005">03</a>
+            <a href="" class="archive-m" title="les articles publiés en mai 2005">05</a>
+            <a href="" class="archive-m" title="les articles publiés en juin 2005">06</a>
+            <a href="" class="archive-m" title="les articles publiés en septembre 2005">09</a>
+            <a href="" class="archive-m" title="les articles publiés en octobre 2005">10</a>
+            <a href="" class="archive-m" title="les articles publiés en décembre 2005">12</a>
+          </li>
         </ul>
       </div>
     </div>
