@@ -37,6 +37,16 @@ footer, #Footer {
   clear: both;
 }
 
+.archives-section h3 {
+  text-align: right;
+  font-size: 72px;
+  color: #efefef;
+}
+.archives-section .date {
+  text-align: right;
+  width: 200px;
+}
+
 .bottom-nav {
   margin: 5px 0;
 }
