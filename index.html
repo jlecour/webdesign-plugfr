@@ -14,10 +14,10 @@
 <script src="js/modernizr-1.0.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-  <div id="Wrapper" class="container_12">
-    <header id="Header" class="grid_12">
+  <div id="wrapper" class="container_12">
+    <header id="main-header" class="grid_12">
       <div id="logo" class="grid_3 alpha">
-        <h1><a href="./" title="&larr; retour à l'accueil">
+        <h1><a href="./" rel="Index" title="&larr; retour à l'accueil">
           <img src="img/logo_plug_grand.gif" alt="PLUG" title="PLUG &ndash; Provence Linux User Group" />
         </a></h1>
       </div>
@@ -30,16 +30,16 @@
       <div class="clear"></div>
     </header>
     <hr class="hide" />
-    <div id="MainContent" class="grid_9 push_3">
-      <div class="article">
-        <h2><a href="/posts/date-slug">Réunion le 2 octobre</a></h2>
-        <div class="article-meta">
-          <p>publié le 5 septembre 2009 dans <a href="" class="category">réunions</a></p>
-        </div>
-        <div class="article-chapo">
+    <div id="main-content" class="grid_9 push_3">
+      <article>
+        <header>
+          <h2><a href="/posts/date-slug">Réunion le 2 octobre</a></h2>
+          <p>publié le <time>5 septembre 2009</time> dans <a href="" class="category">réunions</a></p>
+        </header>
+        <div class="chapo">
           <p>Le PLUG organise une réunion le vendredi 3 juillet 2009 à partir de 19h00.</p>
         </div>
-        <div class="article-content">
+        <div class="content">
           <div class="img-right"><a href="img/photo.png" onclick="return false;"><img src="img/photo.png" alt="photo" width="150" height="150" /></a></div>
           <p>Vers 20h00, nous commencerons par quelques "<b>présentation flash</b>", liées aux logiciels libres sous forme de mini-exposés successifs d’environ 5 minutes (ouvert à toute personne intéressée).<br>
             N’hésitez pas à préparer quelque chose de très court, même si vous n’avez pas l’impression de maîtriser le sujet, le but et d’échanger sur quelque chose de nouveau (au moins pour vous).</p>
@@ -51,7 +51,8 @@
             <li>logiciels de Contrôle de Version (intro générale)</li>
           </ul>
 
-          <pre><code class="ruby">
+          <pre>
+            <code class="ruby">
     def deep_link(options = {})
     
       base = AppConfig.brokers.ratestogo.deep_link_url
@@ -67,7 +68,8 @@
     
       base + "?" + url_options_1.to_param + "?" + (url_options_2.to_param).gsub(/&amp;/,'%26')
     end
-          </code></pre>
+            </code>
+          </pre>
 
           Les thématiques pas encore introduites :
           <ul>
@@ -84,7 +86,7 @@
           <p>Selon la tradition de l’auberge espagnole, les participants à la réunion sont invités à apporter un petit quelque chose à boire et/ou à grignoter.</p>
         </div>
         
-        <div class="article-ps">
+        <div class="ps">
           La réunion se tiendra à La Bo[a]te.
           <blockquote>
             <strong><a href="http://laboate.com/" class="external">La Bo[a]te</a></strong><br>
@@ -94,21 +96,28 @@
           <p>Pour vous rendre à la soirée, vous pouvez consulter <a href="http://maps.google.com/maps?q=35,%20rue%20de%20la%20Paix,%20Marseille,%2013001,%20France" class="external">GoogleMaps</a> …<br>
             Vous pouvez aussi consulter les <a href="">détails des réunions</a>.</p>
         </div>
-      </div>
-      <div class="article">
-        <h2><a href="/posts/date-slug">Réunion le 4 septembre</a></h2>
-      </div>
-      <div class="article">
-        <h2><a href="/posts/date-slug">Monster Inc. cherche un développeur C++ pour de l'embarqué</a></h2>
-      </div>
-      <div class="article">
-        <h2><a href="/posts/date-slug">Compte rendu de l'Assemblée Générale du 20 juin 2009</a></h2>
-      </div>
-      <div class="bottom-nav">&larr; voir les <a href="/archives/">articles plus anciens</a></div>
+      </article>
+      <article>
+        <header>
+          <h2><a href="/posts/date-slug">Réunion le 4 septembre</a></h2>
+        </header>
+      </article>
+      <article>
+        <header>
+          <h2><a href="/posts/date-slug">Monster Inc. cherche un développeur C++ pour de l'embarqué</a></h2>
+        </header>
+      </article>
+      <article>
+        <header>
+          <h2><a href="/posts/date-slug">Compte rendu de l'Assemblée Générale du 20 juin 2009</a></h2>
+        </header>
+      </article>
+      <nav class="articles-nav">
+        <p>&larr; voir les <a href="/archives/" rel="Prev">articles plus anciens</a></p>
+      </nav>
     </div>
     <hr class="hide" />
-    <div id="SideBar" class="grid_3 pull_9">
-      
+    <nav id="main-nav" class="grid_3 pull_9">
       <div id="about" class="nav-block">
         <a href="">À propos du PLUG</a>
       </div>
@@ -146,19 +155,19 @@
         <h3>archives</h3>
         <ul>
           <li>
-            <a href="" class="archive-a" title="les articles publiés en 2009">2009</a><br />
-            <a href="" class="archive-m" title="les articles publiés en janvier 2009">01</a>
-            <a href="" class="archive-m" title="les articles publiés en février 2009">02</a>
-            <a href="" class="archive-m" title="les articles publiés en mars 2009">03</a>
-            <a href="" class="archive-m" title="les articles publiés en avril 2009">04</a>
-            <a href="" class="archive-m" title="les articles publiés en mai 2009">05</a>
-            <a href="" class="archive-m" title="les articles publiés en juin 2009">06</a>
-            <a href="" class="archive-m" title="les articles publiés en juillet 2009">07</a>
-            <a href="" class="archive-m" title="les articles publiés en août 2009">08</a>
-            <a href="" class="archive-m" title="les articles publiés en septembre 2009">09</a>
-            <a href="" class="archive-m" title="les articles publiés en octobre 2009">10</a>
-            <a href="" class="archive-m" title="les articles publiés en novembre 2009">11</a>
-            <a href="" class="archive-m" title="les articles publiés en décembre 2009">12</a>
+            <a href="archives.html#2009" class="archive-a" title="les articles publiés en 2009">2009</a><br />
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en janvier 2009">01</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en février 2009">02</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en mars 2009">03</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en avril 2009">04</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en mai 2009">05</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en juin 2009">06</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en juillet 2009">07</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en août 2009">08</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en septembre 2009">09</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en octobre 2009">10</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en novembre 2009">11</a>
+            <a href="archives.html#2009" class="archive-m" title="les articles publiés en décembre 2009">12</a>
           </li>
           <li>
             <a href="" class="archive-a" title="les articles publiés en 2008">2008</a><br />
@@ -214,8 +223,8 @@
           </li>
         </ul>
       </div>
-    </div>
-    <footer id="Footer" class="grid_12">
+    </nav>
+    <footer id="main-footer" class="grid_12">
       <a href="">mentions légales</a>
       &bull;
       <a href="">contact</a>

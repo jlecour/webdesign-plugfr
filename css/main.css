@@ -2,8 +2,7 @@ body {
   background-color: #efefef;
 }
 
-
-#Wrapper {
+#wrapper {
   margin: 0 auto;
   text-align: left;
   border: 1px solid #efefef;
@@ -11,12 +10,12 @@ body {
   background-color: #fff;
 }
 
-header, #Header {
+#main-header {
   border-bottom: 3px solid #efefef;
   margin-bottom: 20px;
   padding-top: 10px;
 }
-footer, #Footer {
+#main-footer {
   border-top: 3px solid #efefef;
   margin-top: 10px;
   padding: 10px 0;
@@ -28,26 +27,26 @@ footer, #Footer {
   padding-top: 5px;
 }
 
-.article {
+article {
   border-bottom: 1px solid #ccc;
 }
-.article-chapo,
-.article-content,
-.article-ps {
+article .chapo,
+article .content,
+article .ps {
   clear: both;
 }
 
-.archives-section h3 {
+#archives section h3 {
   text-align: right;
   font-size: 72px;
   color: #efefef;
 }
-.archives-section .date {
+#archives section .date {
   text-align: right;
   width: 200px;
 }
 
-.bottom-nav {
+nav.articles-nav {
   margin: 5px 0;
 }
 

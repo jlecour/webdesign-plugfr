@@ -42,36 +42,36 @@ blockquote {
   
 }
 
-#Header h1 {
+#main-header h1 {
   font-size: 48px;
   margin-bottom: 0px;
 /*  color: #efefef;*/
 }
-.article {
+article {
   padding: 0 0 10px 0;
   margin: 0 0 10px 0;
 }
-.article h2 {
+article header h2 {
   margin: 0;
 }
-.article-meta {
+article header p {
   font-size: 12px;
 /*  margin-bottom: ;*/
 }
-.article-chapo {
+article .chapo {
   line-height: 1.7em;
   font-weight: bold;
 }
 
 
-.nav-block {
-  padding: 10px 10px;
+#main-nav .nav-block {
+  padding: 10px;
 	font-family: helvetica, "helvetica neue", arial, verdana, sans-serif;
 	font-size: 13px;
   border-bottom: 1px solid #efefef;
 /*  padding-bottom: 5px;*/
 }
-.nav-block h3 {
+#main-nav .nav-block h3 {
 /*  margin: 15px -10px 5px -10px;*/
   margin: 0 0 5px 0;
 /*  text-transform: uppercase;*/
@@ -79,14 +79,14 @@ blockquote {
   font-size: 18px;
 }
 
-.nav-block ul {
+#main-nav .nav-block ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-block p,
-.nav-block li {
+#main-nav .nav-block p,
+#main-nav .nav-block li {
   margin: 0;
   padding: 0;
 }
