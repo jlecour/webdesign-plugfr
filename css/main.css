@@ -63,12 +63,6 @@ pre {
 	overflow: auto;
 }
 
-abbr {
-/*  border-bottom: 1px dashed #000;*/
-  text-decoration: underline;
-  cursor: help;
-}
-
 .img-left {
   float: left;
   margin: 0 1em 1em 0;
