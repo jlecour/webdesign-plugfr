@@ -185,3 +185,36 @@ article .chapo {
   font-size: 0.85em;
   line-height: 0.85em;
 }
+
+#contact-form {
+  margin-right: 30%;
+}
+#contact-form fieldset {
+  margin: 8px 0 7px;
+}
+#contact-form fieldset {
+  border-top: 1px solid #efefef;
+}
+
+#contact-form .form-row {
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+#contact-form .form-row label {
+  width: 30%;
+  margin-left: 1%;
+  float: left;
+  display: block;
+}
+#contact-form .form-row input {
+  width: 20em;
+}
+#contact-form #submit-row input {
+  width: auto;
+  margin-left: 31%;
+}
+#contact-form #message-row textarea {
+  clear: both;
+  width: 68%;
+}

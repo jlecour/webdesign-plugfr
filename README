@@ -1,5 +1,7 @@
 Templates pour le nouveau site du PLUG
 
+Le formulaire de contact est OK pour un tout premier jet
+
 Le design général utilise le plus possible les bonnes balises HTML5 (comme conseillé dans l'article http://html5doctor.com/designing-a-blog-with-html5/)
 Il faut affiner l'utilisation de la balise `time`.
 

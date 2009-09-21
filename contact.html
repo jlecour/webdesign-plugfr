@@ -32,12 +32,31 @@
     <hr class="hide" />
     <div id="main-content" class="grid_9 push_3">
 
-      <form>
-        
-        <label for="nom">Votre nom :</label> <input type="text" name="nom" value="" id="nom" placeholder="Gaston Lagaffe" />
-        <label for="email">Votre email :</label> <input type="email" name="email" value="" id="email" placeholder="gaston.lagaffe@dupuis.be" required="required" />
-        <label for="url">Votre site web :</label> <input type="url" name="url" value="" id="url" placeholder="http://blog.dupuis.be/" />
-        <label for="message">Votre message:</label> <textarea name="message" rows="8" cols="40" placeholder="N'importe quel message que vous souhaitez nous communiquer"></textarea>
+      <h2>Vous avez quelque chose à nous dire ?</h2>
+      <form id="contact-form">
+        <fieldset>
+          <p class="form-row">Une question, une critique, un compliment, une suggestion … si êtes clair(e) et pôli(e), on a toutes les chances de vous entendre.</p>
+          <div id="message-row" class="form-row">
+            <label for="message">Votre message:</label> <textarea name="message" rows="8" cols="40" placeholder="N'importe quel message que vous souhaitez nous communiquer"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="form-row">Et si vous nous laissez les infos nécessaires, on devrait même pouvoir vous répondre.</p>
+          <div id="nom-row" class="form-row">
+            <label for="nom">Votre nom :</label> <input type="text" name="nom" value="" id="nom" placeholder="Gaston Lagaffe" />
+          </div>
+          <div id="email-row" class="form-row">
+            <label for="email">Votre email :</label> <input type="email" name="email" value="" id="email" placeholder="gaston.lagaffe@dupuis.be" required="required" />
+          </div>
+          <div id="url-row" class="form-row">
+            <label for="url">Votre site web :</label> <input type="url" name="url" value="" id="url" placeholder="http://blog.dupuis.be/" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div id="submit-row" class="form-row">
+            <input type="submit" value="Envoyer" id="submit">
+          </div>
+        </fieldset>
         
       </form>
 
