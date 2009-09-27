@@ -218,3 +218,9 @@ article .chapo {
   clear: both;
   width: 68%;
 }
+
+
+sup {
+  font-size: 0.85em;
+  vertical-align: top;
+}
