@@ -196,15 +196,8 @@ article .chapo {
 #nav-archives li {
   padding: 0.25em 0;
 }
-.archive-a {
-  font-size: 1.5em;
-/*  display: block;*/
-/*  padding-bottom: -10px;*/
-  line-height: 0.85em;
-}
-.archive-m {
-  font-size: 0.85em;
-  line-height: 0.85em;
+#archives-dates li {
+  display: inline;
 }
 
 #contact-form {
