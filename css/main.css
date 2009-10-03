@@ -93,17 +93,17 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 {
   font-weight: bold;
 }
-a, a:visited {
+:link, :visited {
   color: #4085cd;
   text-decoration: none;
 }
-a:hover {
+:link:hover, :visited:hover {
   text-decoration: underline;
   color: #008040;
 }
 
 /*body{font:13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif}*/
-a:focus{outline:1px dotted invert}
+:link:focus, :visited:focus{outline:1px dotted invert}
 hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}
 h1{font-size:25px}
 h2{font-size:23px}
