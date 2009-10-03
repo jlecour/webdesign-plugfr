@@ -152,12 +152,26 @@ article .chapo {
   border-bottom: 1px solid #efefef;
 /*  padding-bottom: 5px;*/
 }
+#main-nav .nav-subcol {
+  float: left;
+  width: 48%;
+}
+#main-nav .nav-subcol.first {
+  margin-right: 2%;
+}
+#main-nav .nav-subcol.last {
+  margin-left: 2%;
+}
 #main-nav .nav-block h3 {
 /*  margin: 15px -10px 5px -10px;*/
   margin: 0 0 5px 0;
 /*  text-transform: uppercase;*/
 /*  font-weight: normal;*/
   font-size: 18px;
+}
+#main-nav .nav-block h4 {
+  margin: 0 0 5px 0;
+  font-size: 12px;
 }
 
 #main-nav .nav-block ul {
@@ -172,7 +186,14 @@ article .chapo {
   padding: 0;
 }
 
-#archives li {
+#nav-archives #archives-search {
+  margin-bottom: 0.5em;
+}
+#nav-archives #search-field {
+  width: 100%;
+}
+
+#nav-archives li {
   padding: 0.25em 0;
 }
 .archive-a {
