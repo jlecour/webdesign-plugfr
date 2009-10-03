@@ -5,8 +5,8 @@ body {
 #wrapper {
   margin: 0 auto;
   text-align: left;
-  border: 1px solid #efefef;
-  border-size: 0 1px;
+/*  border: 1px solid #efefef;
+  border-size: 0 1px;*/
   background-color: #fff;
 }
 
@@ -238,3 +238,9 @@ sup {
   font-size: 0.85em;
   vertical-align: top;
 }
+
+
+/*.external {
+  background: transparent url('/img/aliasCursor.png') 0% 50% no-repeat;
+  padding-left: 20px;
+}*/
