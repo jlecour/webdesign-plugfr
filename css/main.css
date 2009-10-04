@@ -187,10 +187,15 @@ article .chapo {
 }
 
 #nav-archives #archives-search {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
+}
+#nav-archives #archives-search label {
+  font-weight: bold;
+  font-size: 12px;
 }
 #nav-archives #search-field {
-  width: 100%;
+/*  width: 100%;*/
+margin-left: 1em;
 }
 
 #nav-archives li {
