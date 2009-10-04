@@ -1,4 +1,4 @@
-$('.external').click(function() {
+$('a[href][rel="external"]').click(function() {
   window.open(this.href,'','');
   return false;
 });

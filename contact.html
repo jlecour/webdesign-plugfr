@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="fr" />
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/text.css" />
 <link rel="stylesheet" href="css/960.css" />
@@ -25,7 +26,7 @@
       <div class="grid_9 omega">
         <h1>Provence Linux User Group</h1>
         <p id="baseline">
-          Le <strong><abbr title="Provence Linux User Group">PLUG</abbr></strong> est une association (loi 1901) qui regroupe des passionnés d'<strong>informatique</strong> et <strong>logiciels libres</strong> et leur propose des échanges en ligne (<a href="">mailing-lists</a>, <a href="">IRC</a>, <a href="http://twitter.com/plugfr" class="external">twitter</a>, …) et des <strong>réunions à Marseille</strong> (chaque 1<sup>er</sup> vendredi du mois à <a href="http://laboate.com/" class="external">La Bo[a]te</a>).
+          Le <strong><abbr title="Provence Linux User Group">PLUG</abbr></strong> est une association (loi 1901) qui regroupe des passionnés d'<strong>informatique</strong> et <strong>logiciels libres</strong> et leur propose des échanges en ligne (<a href="">mailing-lists</a>, <a href="irc://irc.freenode.net/%23plugfr" rel="external">IRC</a>, <a href="http://twitter.com/plugfr" rel="external">twitter</a>, …) et des <strong>réunions à Marseille</strong> (chaque 1<sup>er</sup> vendredi du mois à <a href="http://laboate.com/" rel="external">La Bo[a]te</a>).
         </p>
       </div>
       <div class="clear"></div>
@@ -38,24 +39,24 @@
         <fieldset>
           <p class="form-row">Une question, une critique, un compliment, une suggestion … si vous êtes clair(e) et pôli(e), on a toutes les chances de vous entendre.</p>
           <div id="message-row" class="form-row">
-            <label for="message">Votre message:</label> <textarea name="message" rows="8" cols="40" placeholder="N'importe quel message que vous souhaitez nous communiquer"></textarea>
+            <label for="message">Votre message:</label> <textarea name="message" rows="8" cols="40" placeholder="N'importe quel message que vous souhaitez nous communiquer" tabindex="2"></textarea>
           </div>
         </fieldset>
         <fieldset>
           <p class="form-row">Et si vous nous laissez les infos nécessaires, on devrait même pouvoir vous répondre.</p>
           <div id="nom-row" class="form-row">
-            <label for="nom">Votre nom :</label> <input type="text" name="nom" value="" id="nom" placeholder="Gaston Lagaffe" />
+            <label for="nom">Votre nom :</label> <input type="text" name="nom" value="" id="nom" placeholder="Gaston Lagaffe" tabindex="3" />
           </div>
           <div id="email-row" class="form-row">
-            <label for="email">Votre email :</label> <input type="email" name="email" value="" id="email" placeholder="gaston.lagaffe@dupuis.be" required="required" />
+            <label for="email">Votre email :</label> <input type="email" name="email" value="" id="email" placeholder="gaston.lagaffe@dupuis.be" tabindex="4" />
           </div>
           <div id="url-row" class="form-row">
-            <label for="url">Votre site web :</label> <input type="url" name="url" value="" id="url" placeholder="http://blog.dupuis.be/" />
+            <label for="url">Votre site web :</label> <input type="url" name="url" value="" id="url" placeholder="http://blog.dupuis.be/" tabindex="5" />
           </div>
         </fieldset>
         <fieldset>
           <div id="submit-row" class="form-row">
-            <input type="submit" value="Envoyer" id="submit">
+            <input type="submit" value="Envoyer" id="submit" tabindex="6" />
           </div>
         </fieldset>
         
@@ -78,21 +79,21 @@
       </div>
       <div id="nav-irc" class="nav-block">
         <h3>canal <abbr title="Internet Relay Chat">IRC</abbr></h3>
-        retrouvez nous à <a href="irc://irc.freenode.net/%23plugfr" class="external irc">#plugfr</a> sur Freenode
+        retrouvez nous à <a href="irc://irc.freenode.net/%23plugfr" rel="external" class="irc">#plugfr</a> sur Freenode
       </div>
       <div id="nav-misc" class="nav-block">
         <h3>et aussi</h3>
         <ul>
-          <li>le <a href="/articles.atom">flux RSS des articles</a></li>
-          <li><a href="http://twitter.com/plugfr" class="external" title="Twitter">@plugfr</a> sur Twitter</li>
-          <li><a href="http://www.plugfr.org/wiki/" class="external">Wiki</a></li>
-          <li><a href="http://planet.plugfr.org/" class="external">PlanetPlug</a></li>
+          <li>le <a href="/articles.atom" rel="feed">flux RSS des articles</a></li>
+          <li><a href="http://twitter.com/plugfr" rel="external" title="Twitter">@plugfr</a> sur Twitter</li>
+          <li><a href="http://www.plugfr.org/wiki/" rel="external">Wiki</a></li>
+          <li><a href="http://planet.plugfr.org/" rel="external">PlanetPlug</a></li>
         </ul>
       </div>
       <div id="nav-archives" class="nav-block">
         <h3>archives</h3>
         <form id="archives-search">
-          <input type="search" name="q" id="search-field" value="" placeholder="recherche dans le site" />
+          <input type="search" name="q" id="search-field" value="" placeholder="recherche dans le site" tabindex="1" />
         </form>
         <div class="nav-subcol first">
           <h4>par catégories</h4>
@@ -118,7 +119,7 @@
       </div>
       <div id="nav-map" class="nav-block">
         <h3>le plan pour venir</h3>
-        <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=fr&amp;q=la+boate+marseille&amp;sll=43.292345,5.373291&amp;sspn=0.001066,0.002411&amp;ie=UTF8&amp;ll=43.300072,5.373344&amp;spn=0.065089,0.154324&amp;z=13&amp;iwloc=B&amp;cid=4764866130825728813" title="Trouver La Bo[a]te sur Google Maps" class="external"><img  src="img/map_laboate_200x150.gif" alt="Plan pour La Bo[a]te" /></a>
+        <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=fr&amp;q=la+boate+marseille&amp;sll=43.292345,5.373291&amp;sspn=0.001066,0.002411&amp;ie=UTF8&amp;ll=43.300072,5.373344&amp;spn=0.065089,0.154324&amp;z=13&amp;iwloc=B&amp;cid=4764866130825728813" title="Trouver La Bo[a]te sur Google Maps" rel="external"><img  src="img/map_laboate_200x150.gif" alt="Plan pour La Bo[a]te" /></a>
       </div>
     </nav>
     <footer id="main-footer" class="grid_12">
